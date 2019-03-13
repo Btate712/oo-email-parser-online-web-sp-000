@@ -14,6 +14,6 @@ class EmailParser
 
   def parse
     # split emails by either comma and space or just space
-    emails.split(/ |, /)
+    emails.uniq.split(/ |, /)
   end
 end
